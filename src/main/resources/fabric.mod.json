@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rubymod",
+	"version": "${version}",
+	"name": "Ruby Mod",
+	"description": "This mod adds Ruby for Minecraft",
+	"authors": [
+		"KoJI6acka"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rubymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.koji6acka.rubymod.RubyMod"
+		],
+		"client": [
+			"net.koji6acka.rubymod.RubyModClient"
+		],
+		"fabric-datagen": [
+			"net.koji6acka.rubymod.RubyModDataGenerator"
+		]
+	},
+	"mixins": [
+		"rubymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
