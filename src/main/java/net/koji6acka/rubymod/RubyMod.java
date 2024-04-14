@@ -2,6 +2,9 @@ package net.koji6acka.rubymod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.koji6acka.rubymod.block.ModBlocks;
+import net.koji6acka.rubymod.item.ModItemGroups;
+import net.koji6acka.rubymod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +14,9 @@ public class RubyMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlock();
+
 	}
 }
