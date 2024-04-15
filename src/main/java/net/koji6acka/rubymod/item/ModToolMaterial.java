@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    RUBY(4, 1700, 8.0f, 1f, 26,
+    RUBY(4, 1700, 8.0f, 1f, 12,
             () -> Ingredient.ofItems(ModItems.RUBY))
 
     ;

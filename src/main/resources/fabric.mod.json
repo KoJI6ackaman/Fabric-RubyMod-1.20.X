@@ -2,14 +2,13 @@
 	"schemaVersion": 1,
 	"id": "rubymod",
 	"version": "${version}",
-	"name": "Ruby Mod",
-	"description": "This mod adds Ruby for Minecraft",
+	"name": "Kolbaska's Ruby Mod",
+	"description": "This mod adds Ruby for Minecraft. Ruby armor & tools.",
 	"authors": [
 		"KoJI6acka"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/KoJI6ackaman/Fabric-RubyMod-1.20.X"
 	},
 	"license": "MIT",
 	"icon": "assets/rubymod/icon.png",
