@@ -6,6 +6,7 @@ import net.koji6acka.rubymod.block.ModBlocks;
 import net.koji6acka.rubymod.item.ModItemGroups;
 import net.koji6acka.rubymod.item.ModItems;
 import net.koji6acka.rubymod.util.ModLootTableModifiers;
+import net.koji6acka.rubymod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,6 +21,7 @@ public class RubyMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 		ModLootTableModifiers.modifyLootTables();
+		ModWorldGeneration.generateModWorldGen();
 
 	}
 }
