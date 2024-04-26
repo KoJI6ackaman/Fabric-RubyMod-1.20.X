@@ -28,7 +28,7 @@ public class ModLootTableModifiers {
             if(JUNGLE_TEMPLE_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .conditionally(RandomChanceLootCondition.builder(0.35f))
                         .with(ItemEntry.builder(ModItems.RUBY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -39,7 +39,7 @@ public class ModLootTableModifiers {
             if(DESERT_PYRAMID_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.314159f))
+                        .conditionally(RandomChanceLootCondition.builder(0.35f))
                         .with(ItemEntry.builder(ModItems.RUBY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -50,7 +50,7 @@ public class ModLootTableModifiers {
             if(BURIED_TREASURE_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.7f))
+                        .conditionally(RandomChanceLootCondition.builder(0.35f))
                         .with(ItemEntry.builder(ModItems.RUBY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
