@@ -1,0 +1,25 @@
+{
+
+  "Red emerald?": "Қызыл замартас?",
+  "Obtain ruby": "Рубинды табыңыз",
+
+  "item.rubymod.ruby": "Рубин",
+
+  "item.rubymod.ruby_pickaxe": "Рубин қайла",
+  "item.rubymod.ruby_shovel": "Рубин күрек",
+  "item.rubymod.ruby_axe": "Рубин балта",
+  "item.rubymod.ruby_hoe": "Рубин кетпен",
+  "item.rubymod.ruby_sword": "Рубин қылыш",
+
+  "item.rubymod.ruby_helmet": "Рубин дулыға",
+  "item.rubymod.ruby_chestplate": "Рубин кеудеше",
+  "item.rubymod.ruby_leggings": "Рубин шалбар",
+  "item.rubymod.ruby_boots": "Рубин етік",
+
+  "block.rubymod.ruby_block": "Рубин блок",
+
+  "block.rubymod.ruby_ore": "Рубин кені",
+  "block.rubymod.deepslate_ruby_ore": "Тақтатас рубин кені",
+
+  "itemgroup.ruby": "Рубин"
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "rubymod:ruby"
+    },
+    "title": {"translate":"Red emerald?"},
+    "description": {"translate":"Obtain ruby"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "rubymod:textures/block/ruby_block.png",
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rubymod:ruby"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

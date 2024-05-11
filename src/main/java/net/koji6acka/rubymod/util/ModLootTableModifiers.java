@@ -22,13 +22,16 @@ public class ModLootTableModifiers {
     private static final Identifier BURIED_TREASURE_ID =
             new Identifier("minecraft", "chests/buried_treasure");
 
+    private static final Identifier SHIPWRECK_TREASURE_ID =
+            new Identifier("minecraft", "chests/shipwreck_treasure");
+
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
 
             if(JUNGLE_TEMPLE_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.35f))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
                         .with(ItemEntry.builder(ModItems.RUBY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -39,7 +42,7 @@ public class ModLootTableModifiers {
             if(DESERT_PYRAMID_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.35f))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
                         .with(ItemEntry.builder(ModItems.RUBY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -50,7 +53,18 @@ public class ModLootTableModifiers {
             if(BURIED_TREASURE_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.35f))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .with(ItemEntry.builder(ModItems.RUBY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+
+            }
+
+            if(SHIPWRECK_TREASURE_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
                         .with(ItemEntry.builder(ModItems.RUBY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 

@@ -1,0 +1,25 @@
+{
+
+  "Red emerald?": "Красный изумруд?",
+  "Obtain ruby": "Получить рубин",
+
+  "item.rubymod.ruby": "Рубин",
+
+  "item.rubymod.ruby_pickaxe": "Рубиновая кирка",
+  "item.rubymod.ruby_shovel": "Рубиновая лопата",
+  "item.rubymod.ruby_axe": "Рубиновый топор",
+  "item.rubymod.ruby_hoe": "Рубиновая мотыга",
+  "item.rubymod.ruby_sword": "Рубиновый меч",
+
+  "item.rubymod.ruby_helmet": "Рубиновый шлем",
+  "item.rubymod.ruby_chestplate": "Рубиновый нагрудник",
+  "item.rubymod.ruby_leggings": "Рубиновые поножи",
+  "item.rubymod.ruby_boots": "Рубиновые ботинки",
+
+  "block.rubymod.ruby_block": "Рубиновый блок",
+
+  "block.rubymod.ruby_ore": "Рубиновая руда",
+  "block.rubymod.deepslate_ruby_ore": "Рубиносный глубинный сланец",
+
+  "itemgroup.ruby": "Рубин"
+}
