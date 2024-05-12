@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "item": "rubymod:ruby_chestplate"
+    },
+    "title": {
+      "translate":"Shine like a ruby!",
+      "color": "#c92e2e"
+    },
+    "description": {
+      "translate":"Get full ruby armor"
+    },
+    "background": "rubymod:textures/block/ruby_block.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "rubymod:ruby/get_ruby",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "rubymod:ruby_helmet"
+              ]
+            },
+            "chest": {
+              "items": [
+                "rubymod:ruby_chestplate"
+              ]
+            },
+            "legs": {
+              "items": [
+                "rubymod:ruby_leggings"
+              ]
+            },
+            "feet": {
+              "items": [
+                "rubymod:ruby_boots"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}
